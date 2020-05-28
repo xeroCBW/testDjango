@@ -55,7 +55,12 @@ ROOT_URLCONF = 'qf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+
+        #     这里可以写很多页面的路径,这个是数组
+            os.path.join(BASE_DIR,'templates'),
+
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
