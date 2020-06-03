@@ -13,4 +13,5 @@ urlpatterns = [
 
 
     path('grade_students/',views.grade_students),
+    path('grade/',views.grade),
 ]

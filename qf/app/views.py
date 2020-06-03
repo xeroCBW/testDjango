@@ -63,3 +63,11 @@ def grade_students(request):
     # list =  grade.student_set.all()
     #
     # return render(request,'grade.html',{'list':list})
+
+
+def grade(request):
+
+    # 默认不会显示时间,可能是由于自带的工具还不太行
+    list = Grade.objects.all()
+
+    return render(request,'grade.html',{'list':list})
